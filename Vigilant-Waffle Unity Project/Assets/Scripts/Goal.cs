@@ -6,11 +6,22 @@ using UnityEngine;
 /// </summary>
 public class Goal : MonoBehaviour
 {
+    public GameObject winText;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
       
         if (collision.tag == "Player")
         {
+            winText.SetActive(true);
+
+            audioSource.Play();
             Debug.Log("Success!");
         }
     }
