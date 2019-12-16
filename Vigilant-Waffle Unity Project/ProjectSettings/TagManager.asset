@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Background
   - Foreground
+  - music
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1431028267
+    locked: 0
+  - name: 2
+    uniqueID: 1286826229
     locked: 0
   - name: 1
     uniqueID: 35806069
